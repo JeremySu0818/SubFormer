@@ -7,6 +7,6 @@ fi
 
 source .venv/bin/activate
 
-python train_addformer.py
+python train_subformer.py
 
 read -p "Press Enter to continue..."
