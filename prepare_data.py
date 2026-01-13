@@ -50,7 +50,7 @@ def main():
 
     with open(out / "val.txt", "w", encoding="utf-8") as f:
         for a, b in val_pairs:
-            f.write(f"{a}+{b}={a+b}\n")
+            f.write(f"{a}-{b}={a-b}\n")
 
     print(f" - train.txt = {len(train_pairs)} 行")
     print(f" - val.txt   = {len(val_pairs)} 行")
