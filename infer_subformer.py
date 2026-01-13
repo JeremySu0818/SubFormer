@@ -86,7 +86,7 @@ class ConsoleUI:
     @staticmethod
     def header(ckpt: str, device: str, tokens: int):
         print("-" * 50)
-        print(f" AddFormer Interactive Mode (Jeremy's Edition)")
+        print(f" SubFormer Interactive Mode (Jeremy's Edition)")
         print(f" Device: {device} | Max New Tokens: {tokens}")
         print(f" Ckpt: {ckpt}")
         print("-" * 50)
@@ -164,8 +164,8 @@ def main():
 
     ckpt_path = args.ckpt
     if not os.path.exists(ckpt_path):
-        ckpts = get_sorted_checkpoints("addformer_ckpt")
-        ckpt_path = select_checkpoint_interactive("addformer_ckpt", ckpts) or args.ckpt
+        ckpts = get_sorted_checkpoints("subformer_ckpt")
+        ckpt_path = select_checkpoint_interactive("subformer_ckpt", ckpts) or args.ckpt
 
     device = torch.device(
         "cuda" if torch.cuda.is_available() and args.device != "cpu" else "cpu"
