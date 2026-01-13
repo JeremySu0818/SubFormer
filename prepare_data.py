@@ -41,7 +41,7 @@ def main():
     train_pairs = []
     for key in groups_list:
         for a, b in groups[key]:
-            train_f.write(f"{a}+{b}={a+b}\n")
+            train_f.write(f"{a}-{b}={a-b}\n")
             train_pairs.append((a, b))
 
     train_f.close()
