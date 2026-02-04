@@ -19,7 +19,7 @@ hf_logging.set_verbosity_error()
 ds_logging.set_verbosity_error()
 
 DATA_DIR = "data_sub"
-OUTPUT_DIR = "subformer_result"
+OUTPUT_DIR = "subformer"
 MODEL_DIM = 64
 N_LAYER = 8
 N_HEAD = 8
